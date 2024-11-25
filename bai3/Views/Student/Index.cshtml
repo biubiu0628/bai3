@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Trang đăng ký";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+<form action="/Student/ShowKQ" method = "post">
+    MSSV: <input name = "id"/>
+    HoTen: <input name = "name"/>
+    DiemTB: <input name = "score"/>
+    ChuyenNganh:
+        <select name= "nganh">
+            <option>CNPM</option>
+            <option>HTTT</option>
+            <option>ANM</option>
+            <option>TTNT</option>
+            <option>MMT</option>
+        </select>
+    <input type = "submit" value = "DangKy"/>
+</form>
+
